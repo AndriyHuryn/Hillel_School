@@ -30,7 +30,7 @@ class Car:
             self.price = price
             print(f" {self.model} cost {price}")
         else:
-            print("Invalid price!!!")
+            print(f"Invalid price for {self.model} !!!")
 
 
 
