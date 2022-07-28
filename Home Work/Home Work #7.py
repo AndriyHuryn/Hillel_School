@@ -54,9 +54,11 @@ if __name__ == "__main__":
 """Реалізуйте клас «Book». Необхідно зберігати в полях класу: назву книги,
 рік випуску, видавництва, жанр, автора, ціну. Реалізуйте методи класу для введення даних, 
 виведення даних, реалізуйте доступ до окремих полів через методи класу."""
+
+
 """---------------------------"""
-"""I have tried to get it by price but I gave up"""
-"""Everythign else is working, couldn;t figure it out by price"""
+#I have tried to get it by price but I gave up
+#Everythign else is working, couldn;t figure it out by price
 """---------------------------"""
 class Book:
     def __init__(self, name, year, publisher, genre, author, price):
