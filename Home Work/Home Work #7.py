@@ -40,7 +40,7 @@ Lanos = Car(model="Sens", prod_date=2016, manufacture="Ukraine", engine_size=1.6
 
 VW.set_price(100)
 Jeep.set_price(-2)
-Lanos.set_price(int(input("Enter price:")))
+Lanos.set_price(float(input("Enter price:")))
 
 if __name__ == "__main__":
     cars = [VW, Jeep, Lanos]
