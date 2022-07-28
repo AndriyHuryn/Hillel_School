@@ -39,6 +39,8 @@ Jeep = Car(model="Patriot", prod_date=2017, manufacture="USA", engine_size=4.0, 
 Lanos = Car(model="Sens", prod_date=2016, manufacture="Ukraine", engine_size=1.6, color="Black", price=5000)
 
 VW.set_price(100)
+Jeep.set_price(-2)
+Lanos.set_price(5000000)
 
 if __name__ == "__main__":
     cars = [VW, Jeep, Lanos]
