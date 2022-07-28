@@ -6,56 +6,58 @@
  доступ до окремих полів через методи класу."""
 
 
-# class Car:
-#     def __init__(self, model, prod_date, manufacture, engine_size, color, price):
-#         self.model = model
-#         self.prod_date = prod_date
-#         self.manufacture = manufacture
-#         self.engine_size = engine_size
-#         self.color = color
-#         self.price = price
-#
-#     def print_description(self):
-#         print(f"Model:{self.model}, Year-{self.prod_date}, Country:{self.manufacture}, Engine size:{self.engine_size}, "
-#               f"Color:{self.color}, Price:{self.price}")
-#
-#     def get_price(self):
-#         print(f"Car {self.model}\nhas this price:{self.price}")
-#
-#     def get_engine(self):
-#         print(f"The {self.model}\nhas engine size of {self.engine_size}")
-#
-#
-# VW = Car(model="CC", prod_date=2015, manufacture="Germany", engine_size=2.0, color="Blue", price=10000)
-# Jeep = Car(model="Patriot", prod_date=2017, manufacture="USA", engine_size=4.0, color="White", price=20000)
-# Lanos = Car(model="Sens", prod_date=2016, manufacture="Ukraine", engine_size=1.6, color="Black", price=5000)
-#
-# if __name__ == "__main__":
-#     cars = [VW, Jeep, Lanos]
-#     options = "View-(full details), Engine-(engine size), Price-(Price Range), Exit:"
-#
-#     while True:
-#         filtered_option = input(f"Choose what would you like to do by typing following options\n {options}")
-#         if filtered_option == "View":
-#             for car in cars:
-#                 car.print_description()
-#         elif filtered_option == "Engine":
-#             for car in cars:
-#                 car.get_engine()
-#         elif filtered_option == "Price":
-#             for car in cars:
-#                 car.get_price()
-#         elif filtered_option == "Exit":
-#             print("Bye bye......")
-#             break
-#         else:
-#             print(f"PLease choose one of the following options {options}")
+class Car:
+    def __init__(self, model, prod_date, manufacture, engine_size, color, price):
+        self.model = model
+        self.prod_date = prod_date
+        self.manufacture = manufacture
+        self.engine_size = engine_size
+        self.color = color
+        self.price = price
+
+    def print_description(self):
+        print(f"Model:{self.model}, Year-{self.prod_date}, Country:{self.manufacture}, Engine size:{self.engine_size}, "
+              f"Color:{self.color}, Price:{self.price}")
+
+    def get_price(self):
+        print(f"Car {self.model}\nhas this price:{self.price}")
+
+    def get_engine(self):
+        print(f"The {self.model}\nhas engine size of {self.engine_size}")
+
+
+VW = Car(model="CC", prod_date=2015, manufacture="Germany", engine_size=2.0, color="Blue", price=10000)
+Jeep = Car(model="Patriot", prod_date=2017, manufacture="USA", engine_size=4.0, color="White", price=20000)
+Lanos = Car(model="Sens", prod_date=2016, manufacture="Ukraine", engine_size=1.6, color="Black", price=5000)
+
+if __name__ == "__main__":
+    cars = [VW, Jeep, Lanos]
+    options = "View-(full details), Engine-(engine size), Price-(Price Range), Exit:"
+
+    while True:
+        filtered_option = input(f"Choose what would you like to do by typing following options\n {options}")
+        if filtered_option == "View":
+            for car in cars:
+                car.print_description()
+        elif filtered_option == "Engine":
+            for car in cars:
+                car.get_engine()
+        elif filtered_option == "Price":
+            for car in cars:
+                car.get_price()
+        elif filtered_option == "Exit":
+            print("Bye bye......")
+            break
+        else:
+            print(f"PLease choose one of the following options {options}")
 
 """Реалізуйте клас «Book». Необхідно зберігати в полях класу: назву книги,
 рік випуску, видавництва, жанр, автора, ціну. Реалізуйте методи класу для введення даних, 
 виведення даних, реалізуйте доступ до окремих полів через методи класу."""
-
-
+"""---------------------------"""
+"""I have tried to get it by price but I gave up"""
+"""Everythign else is working, couldn;t figure it out by price"""
+"""---------------------------"""
 class Book:
     def __init__(self, name, year, publisher, genre, author, price):
         self.name = name
