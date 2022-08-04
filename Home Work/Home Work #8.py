@@ -58,16 +58,14 @@ class Laptop(Product):
         print(f"Description: {self.name} : {self.color}, ${self.price} have only {self.amount} on hand, "
               f"based on {self.motherboard_type} motherboard and made of {self.material}")
 
-
-
 iphone7 = Phone(name="iPhone 7", color="red", price=700.0, amount=1, discount=0.15)
 iphone13 = Phone(name="iPhone 13", color="black", price=2000.0, amount=2, lte=True, discount=0.30)
 lenovo = Laptop(name="Lenovo", color="grey", price=3000.0, amount=1, discount=0.40,
                 motherboard_type="MSI", material="Aluminium")
 
-iphone13.show_description()
-lenovo.show_description()
-iphone7.show_description()
-iphone13.get_product_description()
+# iphone13.show_description()
+# lenovo.show_description()
+# iphone7.show_description()
+# iphone13.get_product_description()
 lenovo.get_price()
-lenovo.get_product_description()
+iphone13.get_price()
